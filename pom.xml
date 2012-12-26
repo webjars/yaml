@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.malkusch.thirdparty</groupId>
+	<artifactId>yaml</artifactId>
+	<version>4.0.2</version>
+	<name>YAML CSS Framework</name>
+	<description>A modular CSS framework for truly flexible, accessible and responsive websites</description>
+	<packaging>jar</packaging>
+	<url>http://www.yaml.de/</url>
+	<licenses>
+		<license>
+			<name>Creative Commons Attribution 2.0 License</name>
+			<url>http://www.yaml.de/license.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<distributionManagement>
+		<repository>
+			<id>ssh-repository</id>
+			<url>scpexe://malkusch.de/var/www/malkusch.de/mvn/</url>
+		</repository>
+	</distributionManagement>
+	<developers>
+		<developer>
+			<id>malkusch</id>
+			<name>Markus Malkusch</name>
+			<email>markus@malkusch.de</email>
+		</developer>
+	</developers>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh-external</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+	</build>
+	<repositories>
+        <repository>
+            <id>malkusch.de</id>
+            <url>http://mvn.malkusch.de/</url>
+        </repository>
+    </repositories>
+</project>
