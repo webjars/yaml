@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.malkusch.thirdparty</groupId>
 	<artifactId>yaml</artifactId>
-	<version>4.0.2</version>
+	<version>4.1.2</version>
 	<name>YAML CSS Framework</name>
 	<description>A modular CSS framework for truly flexible, accessible and responsive websites</description>
 	<packaging>jar</packaging>
