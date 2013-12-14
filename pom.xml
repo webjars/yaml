@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.webjars</groupId>
 	<artifactId>yaml</artifactId>
-	<version>4.1.2</version>
+	<version>4.1.3-SNAPSHOT</version>
 	<name>YAML CSS Framework</name>
 	<description>A modular CSS framework for truly flexible, accessible and responsive websites</description>
 	<packaging>jar</packaging>
